@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             initialViewController = WelcomeView()
             UserDefaults.standard.set(true, forKey: "hasLaunchedBefore") // Marca que o app já foi aberto
         } else {
-            initialViewController = MapView()// teste git
+            initialViewController = MapView()// teste git 2
         }
 
         let navigationController = UINavigationController(rootViewController: initialViewController)
