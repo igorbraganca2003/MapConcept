@@ -14,22 +14,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-
+        
         let isFirstTime = !UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
         let initialViewController: UIViewController
-
+        
         if isFirstTime {
             initialViewController = WelcomeView()
-            UserDefaults.standard.set(true, forKey: "hasLaunchedBefore") // Marca que o app já foi aberto
+            UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
         } else {
-            initialViewController = MapView()// teste git 2
-        }// git teste 3
-
+            initialViewController = MapView()
+        }
+        
         let navigationController = UINavigationController(rootViewController: initialViewController)
-
+        
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        
     }
     
     
@@ -60,7 +61,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-    
     
 }
 

@@ -10,13 +10,12 @@ import MapKit
 
 class ViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
 }
 
-#Preview{
-    return ViewController()
-}
+//#Preview{
+//    return ViewController()
+//}

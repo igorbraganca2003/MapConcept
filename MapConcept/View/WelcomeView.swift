@@ -59,6 +59,6 @@ class WelcomeView: UIViewController {
 }
 
 
-#Preview {
-    return WelcomeView()
-}
+//#Preview {
+//    return WelcomeView()
+//}
